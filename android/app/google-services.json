@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "201194262803",
+    "project_id": "nutritrack-ebe15",
+    "storage_bucket": "nutritrack-ebe15.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201194262803:android:475d48ef89d0636ce4cae6",
+        "android_client_info": {
+          "package_name": "com.example.daily_academic_achievement_log"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAGeY8lk4BCPmyEn2AROquKG-uwtwj8jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

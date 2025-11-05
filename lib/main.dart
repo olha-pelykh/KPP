@@ -6,9 +6,17 @@ import 'models/food_item.dart';
 import 'screens/login_screen.dart';
 import 'screens/main_app_shell.dart'; 
 
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
 Future<void> main() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
+    
+    await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+    );
+    
     await Hive.initFlutter();
     
     Hive.registerAdapter(DailyDataModelAdapter()); //серіалізатор/десеріалізатор //Коли я попрошу тебе зберегти об'єкт DailyDataModel, ось інструкція (DailyDataModelAdapter), як перетворити його на байти для збереження на диску
